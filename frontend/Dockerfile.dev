@@ -1,0 +1,15 @@
+FROM node:20-alpine
+WORKDIR /app
+
+# Install dependencies in the image so a named volume can preserve node_modules
+COPY package*.json ./
+RUN npm ci
+
+# Copy rest of the app (will be overridden by a bind mount in dev)
+COPY . .
+
+ENV NODE_ENV=development
+EXPOSE 3000
+
+# Start Next in dev mode and bind to 0.0.0.0 so it's reachable from host
+CMD ["npm", "run", "dev", "--", "-H", "0.0.0.0"]
