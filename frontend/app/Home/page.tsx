@@ -11,8 +11,9 @@ export default function Home() {
     const itemImage: string = "/bronie.png"
 
     return (<>
-        <ItemCard bgImage={itemImage} itemImage={itemImage} itemName={name} itemDescription={description} />
-        <ItemCard bgImage={bgImage} itemImage={itemImage} itemName={name} itemDescription={description} />
+        <ItemCard bgImage={itemImage} itemImage={itemImage} itemName={name} itemDescription={description} side={"left"} />
+        <ItemCard bgImage={bgImage} itemImage={itemImage} itemName={name} itemDescription={description} side={"right"} />
+
 
 
     </>)
