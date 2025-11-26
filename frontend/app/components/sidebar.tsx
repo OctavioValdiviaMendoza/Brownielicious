@@ -27,14 +27,14 @@ export default function Sidebar() {
         />
 
         <Link
-          className={`${lily.className} text-white text-[30px] flex flex`}
+          className={`${lily.className} text-white text-3xl flex flex`}
           href="/Home"
         >
           Brownielicious
         </Link>
       </div>
       <Link
-        className={`${lily.className} text-white text-[30px]  hover:bg-[#ff75c1] w-full`}
+        className={`${lily.className} text-white text-3xl hover:bg-[#ff75c1] w-full`}
         href="/Home"
       >
         <HouseHeart className="inline mr-2 w-9 h-9" />
@@ -42,55 +42,55 @@ export default function Sidebar() {
       </Link>
       <Link
         href=""
-        className={`${lily.className} text-white text-[30px] hover:bg-[#ff75c1] w-full`}
+        className={`${lily.className} text-white text-3xl hover:bg-[#ff75c1] w-full`}
       >
         <Package className="inline mr-2 w-9 h-9" />
         Brownie Boxes
       </Link>
       <Link
         href=""
-        className={`${lily.className} text-white text-[30px] hover:bg-[#ff75c1] w-full`}
+        className={`${lily.className} text-white text-3xl hover:bg-[#ff75c1] w-full`}
       >
         <Truck className="inline mr-2 w-9 h-9" />
         Catering
       </Link>
       <Link
         href=""
-        className={`${lily.className} text-white text-[30px] hover:bg-[#ff75c1] w-full`}
+        className={`${lily.className} text-white text-3xl hover:bg-[#ff75c1] w-full`}
       >
         <History className="inline mr-2 w-9 h-9" />
         Order History
       </Link>
       <Link
         href=""
-        className={`${lily.className} text-white text-[30px] hover:bg-[#ff75c1] w-full mt-98`}
+        className={`${lily.className} text-white text-3xl hover:bg-[#ff75c1] w-full mt-auto`}
       >
         <UserRoundCog className="inline mr-2 w-9 h-9" />
         Account Settings
       </Link>
       <div className="flex flex-row gap-4">
         <Image
-          className="mb-4 border-black border-1 rounded mt-2"
+          className="mb-4 border-black border-1 rounded-full mt-2"
           src="/blankpfp.jpg"
           alt="Profile Picture"
-          width={40}
+          width={50}
           height={40}
         />
         <div className="flex flex-row gap-0">
-          <div className="flex flex-col gap-0 ml-2">
+          <div className="flex flex-col gap-0 ml-2 mt-1">
             <>
-              <h1 className={`${lily.className} text-white text-[17px] mt-1`}>
+              <h1 className={`${lily.className} text-white text-1xl mt-1`}>
                 JOHN DOE
               </h1>
             </>
             <>
-              <h1 className={`${lily.className} text-white text-[17px]`}>
+              <h1 className={`${lily.className} text-white text-sm`}>
                 {" "}
                 Customer
               </h1>
             </>
           </div>
-          <LogOut className="inline ml-15 mt-3 w-7 h-7 mt-1 cursor-pointer hover:text-black text-white" />
+          <LogOut className="inline ml-15 mt-3 w-7 h-7 mt-4 cursor-pointer hover:text-black text-white" />
         </div>
       </div>
     </div>
